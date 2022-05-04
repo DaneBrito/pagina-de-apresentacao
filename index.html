@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/046816ffb5.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200&family=Roboto:ital,wght@1,100;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilopg.css">
+    <title>Daniele Brito</title>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="imagens/logobranco.png" alt="Logo Daniele Brito" width="25%">
+        </div>
+
+        <ul>
+            <li>
+                <a target="_blank" href="https://github.com/DaneBrito">Github</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.linkedin.com/in/daniele-brito/">Linkedin</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://wa.me/14996727117">WhatsApp</a>
+            </li>
+        </ul>
+
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Daniele Brito</h1>
+                <h5>Desenvolvedor Full Stack</h5>
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation"  class="fa-solid fa-angles-down"></i>
+            </div>
+
+            <div style="display: none" id="about">
+                <p>
+                    Uma mulher determinada que não foge de novos desafios.
+Com muito foco em resultados e comprometida com o que se propõe a fazer.
+Sempre tive uma facilidade muito grande de aprendizado, que me fez alcançar excelentes resultados no mundo financeiro, alcançando as metas sugeridas e muitas vezes superandos as expectativas.<br/>
+Sou muito curiosa e isso me levou a querer entender mais sobre a área tecnológica, surgindo então uma segunda paixão.<br/> Comecei os estudos com lógica de programação e escolhi Python como minha primeira linguagem, adquiri conhecimento em JavaScript e no momento fui aprovada no programa #Hiring Coders onde estou aprimorando meus conhecimentos.<br/> Estou sedenta por novos aprendizados e ansiosa por concluir essa transição.
+                </p>
+            </div>
+
+            <div class="form">
+                <div>
+                    <p>Deixe seu contato!</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="seu melhor email :)">
+                    <button>Enviar!</button>
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+    
+</body>
+</html>
